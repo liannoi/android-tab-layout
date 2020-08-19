@@ -27,12 +27,20 @@ class PagerFragment : Fragment() {
     ///////////////////////////////////////////////////////////////////////////
 
     private fun setupTabLayout() {
+        val tabLayout: TabLayout = requireView().findViewById(R.id.tab_layout)
+        tabLayout.setupWithViewPager(setupViewPager())
+        tabLayout.getTabAt(0)?.setIcon(R.drawable.ic_home)
+        tabLayout.getTabAt(1)?.setIcon(R.drawable.ic_sport)
+        tabLayout.getTabAt(2)?.setIcon(R.drawable.ic_update)
+    }
+
+    private fun setupViewPager(): ViewPager {
         val viewPager: ViewPager = requireView().findViewById(R.id.view_pager)
 
         fragmentManager?.also { manager ->
             PagerAdapter(requireContext(), manager).also { viewPager.adapter = it }
         }
 
-        requireView().findViewById<TabLayout>(R.id.tab_layout).setupWithViewPager(viewPager)
+        return viewPager
     }
 }
