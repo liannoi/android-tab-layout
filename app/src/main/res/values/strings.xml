@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">Tin</string>
+    <string name="app_name">TIN</string>
+    <string name="fragment_main_name">Fragment</string>
+    <string name="mock_lorem_ipsum">
+        Aliquam sit amet enim hendrerit, condimentum mauris sed, pharetra tellus. Morbi vel lacus
+        aliquet, tristique neque ac, mattis lorem. In efficitur ullamcorper neque, id eleifend
+        libero. Aliquam erat volutpat. Nulla ullamcorper lectus ipsum, sit amet laoreet tellus
+        gravida quis. Cras nec eros nec lorem consectetur fringilla quis sit amet eros. Nam sem
+        erat, laoreet sed tortor sed, feugiat lobortis dui. Orci varius natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus.
+    </string>
+    <string-array name="tabs_titles">
+        <item>@string/fragment_main_name</item>
+        <item>@string/fragment_main_name</item>
+        <item>@string/fragment_main_name</item>
+    </string-array>
 </resources>
